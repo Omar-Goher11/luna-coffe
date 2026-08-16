@@ -1,0 +1,549 @@
+/* ================= RESET ================= */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================= GENERAL ================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1C1410;
+    color: #F5EDE6;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ================= HEADER ================= */
+
+.header-content {
+    background-color: #241A15;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 30px;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #44332A;
+    z-index: 100;
+}
+
+
+/* ================= LOGO ================= */
+
+.header-content h1 {
+    color: #C68B59;
+    font-size: 35px;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar .unorderd {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    list-style-type: none;
+}
+
+.navbar .unorderd li a {
+    color: #B8A69A;
+
+    text-decoration: none;
+    font-size: 18px;
+
+    transition: color 0.3s ease;
+}
+
+
+/* ================= NAVBAR HOVER ================= */
+
+.navbar .unorderd li a:hover {
+    color: #E0A875;
+}
+
+
+/* ================= ACTIVE ================= */
+
+.active {
+    background-color: #C68B59;
+    color: #1C1410 !important;
+
+    padding: 8px 18px;
+
+    border-radius: 25px;
+
+    transition: background-color 0.3s ease;
+}
+
+.active:hover {
+    background-color: #E0A875;
+}
+
+
+/* ================= INPUT ================= */
+
+.form input {
+    padding: 10px 15px;
+
+    border-radius: 10px;
+    border: 1px solid #44332A;
+
+    background-color: #2D211A;
+    color: #F5EDE6;
+}
+
+.form input::placeholder {
+    color: #B8A69A;
+}
+
+.form input:focus {
+    outline: 2px solid #C68B59;
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn {
+    background-color: #C68B59;
+    color: #1C1410;
+    cursor: pointer;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #E0A875;
+}
+
+.hero-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.8;
+    word-spacing: 4px;
+}
+
+
+.borderr {
+    background-color: #2D211A;
+    border: 1px solid #44332A;
+
+    border-radius: 40px 10px 40px 10px;
+
+    transition: border-color 0.3s ease,
+        transform 0.3s ease;
+
+    padding: 40px;
+}
+
+.borderr:hover {
+    border-color: #C68B59;
+    transform: translateY(-5px);
+}
+
+.btnn {
+    background-color: #C68B59;
+    color: #1C1410;
+    cursor: pointer;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.btnn:hover {
+    background-color: #E0A875;
+}
+
+
+/* =============== Cards ================ */
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    padding: 80px 40px;
+}
+
+
+.section2 .card {
+    width: 350px;
+
+    background-color: #2D211A;
+    border: 1px solid #44332A;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 1.8;
+    transition: all 0.3s ease;
+}
+
+
+.section2 .card:hover {
+    box-shadow: 0 10px 30px rgba(198, 139, 89, 0.3);
+    transform: translateY(-15px);
+    border-color: #C68B59;
+}
+
+
+.section2 .card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.section2 .card h2 {
+    color: #F5EDE6;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 20px 15px 5px;
+}
+
+
+.section2 .card p {
+    color: #B8A69A;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    margin: 0 20px 20px;
+}
+
+.section2 .card .btn {
+    margin-bottom: 25px;
+}
+
+
+
+
+.section3 {
+    padding: 100px 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.section3 h2 {
+    margin-bottom: 50px;
+    color: #C68B59;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    max-width: 1100px;
+    margin: auto;
+    transition: all 0.3s ease;
+
+}
+
+
+.about-content:hover {
+    box-shadow: 0 10px 30px rgba(198, 139, 89, 0.3);
+    transform: translateY(-15px);
+    border-color: #C68B59;
+    padding: 30px;
+    border-radius: 14px;
+}
+
+.about-image {
+    width: 450px;
+}
+
+
+.about-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 1px solid #44332A;
+}
+
+
+.luna-article {
+    width: 500px;
+    text-align: left;
+}
+
+
+.luna-article p {
+    color: #B8A69A;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+/* ============= hours =============== */
+
+.hours {
+    width: 500px;
+    max-width: 90%;
+
+    margin: 80px auto;
+    padding: 40px;
+
+    text-align: center;
+
+    background-color: #2D211A;
+
+    border: 1px solid #44332A;
+    border-radius: 25px;
+
+    line-height: 1.9;
+}
+
+.hours h2 {
+    color: #C68B59;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.hours p {
+    color: #B8A69A;
+    margin: 12px 0;
+}
+
+.hours time {
+    color: #F5EDE6;
+    font-weight: bold;
+}
+
+
+/* form */
+/* ================= CONTACT ================= */
+
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #C68B59;
+    font-size: 32px;
+
+    margin-bottom: 35px;
+}
+
+
+/* ================= FORM ================= */
+
+.contact-form {
+    width: 500px;
+    max-width: 100%;
+
+    margin: auto;
+
+    transition: all 0.3s ease;
+
+
+    padding: 35px;
+
+    background-color: #2D211A;
+
+    border: 1px solid #44332A;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    text-align: left;
+}
+
+
+/* ================= LABEL ================= */
+
+.contact-form label {
+    color: #F5EDE6;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-top: 5px;
+}
+
+
+/* ================= INPUT ================= */
+
+.contact-form input,
+.contact-form textarea {
+
+    width: 100%;
+
+    padding: 12px 15px;
+
+    background-color: #1C1410;
+
+    color: #F5EDE6;
+
+    border: 1px solid #44332A;
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* ================= TEXTAREA ================= */
+
+.contact-form textarea {
+    min-height: 140px;
+
+    resize: none;
+}
+
+
+/* ================= PLACEHOLDER ================= */
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #8F7E72;
+}
+
+
+/* ================= FOCUS ================= */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #C68B59;
+
+    box-shadow: 0 0 0 2px rgba(198, 139, 89, 0.2);
+}
+
+
+/* ================= BUTTON ================= */
+
+.contact-form .btn {
+    margin-top: 15px;
+
+    padding: 12px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    background-color: #C68B59;
+    color: #1C1410;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.contact-form .btn:hover {
+    background-color: #E0A875;
+
+    transform: translateY(-2px);
+}
+
+.contact-form:hover {
+    box-shadow: 0 10px 30px rgba(198, 139, 89, 0.3);
+    transform: translateY(-15px);
+    border-color: #C68B59;
+}
+
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background-color: #241A15;
+
+    margin-top: 80px;
+
+    border-top: 1px solid #44332A;
+
+    text-align: center;
+}
+
+
+/* ================= FOOTER CONTENT ================= */
+
+.footer-content {
+    padding: 50px 20px 30px;
+}
+
+.footer-content h2 {
+    color: #C68B59;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.footer-content>p {
+    color: #B8A69A;
+
+    margin-bottom: 25px;
+}
+
+
+/* ================= FOOTER NAV ================= */
+
+.footer-nav {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.footer-nav a {
+    color: #B8A69A;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #C68B59;
+}
+
+
+/* ================= FOOTER BOTTOM ================= */
+
+.footer-bottom {
+    padding: 20px;
+
+    border-top: 1px solid #44332A;
+}
+
+.footer-bottom p {
+    color: #8F7E72;
+
+    font-size: 14px;
+}
